@@ -27,8 +27,6 @@ btns.forEach(btn => {
     }
 })
 
-let countDown;
-
 function startTimer() {
     clearInterval(interval)
 
@@ -48,6 +46,8 @@ function stopTimer() {
     clearInterval(interval);
 }
 function resetTimer() {
+    minutes = 0
+    seconds = 0
     h1.innerHTML = '00:00'
-    clearInterval(interval);
+    clearInterval(interval)
 }
